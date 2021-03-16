@@ -34,7 +34,7 @@ Si decide probar el resultado de la actividad, puede acceder al directorio [RPC-
 $ cd RPC-C
 $ make -f ./Makefile.suma
 ```
-#### Probar el resultado en la una sola máquina
+#### Probar el resultado en una sola máquina
 Puede probar la funcionalidad ejecutando los ficheros generados de `suma_client` y `suma_server`.
 * Abra una terminal y ejecute
 ```sh
@@ -52,7 +52,7 @@ Es recomendable que realice la construcción de este ejemplo y vaya indagando so
 <br>
 
 ## Actividad: Mi primer programa con RPC
-* Crea una aplicación distribuída usando **RPCGEN**.
+* Crea una aplicación distribuida usando **RPCGEN**.
 * Conoce el proceso de distribución de aplicaciones en general para abordar situaciones más complejas.
 ### Crear la interfaz que define el RPC
 
@@ -158,16 +158,6 @@ int main( int argc, char* argv[] )
 No siempre se genera depende de los parámetros utilizados para procedimientos remotos. Este archivo contiene código para reunir parámetros para la estructura intpair.
 ##### suma_server.c
 Aquí agregaremos el código necesario para implementar el procedimiento remoto
-```c
-int main( int argc, char* argv[] )
-{
-...
-	if (!svc_register(transp, SUMA_PROG, SUMA_VERS, suma_prog_1, proto)) {
-	   _msgout("unable to register (SUMA_PROG, SUMA_VERS, udp).");
-	   exit(1);
-	}
-...
-```
 #### Primera prueba a nuestro servidor
 Modificamos el archivo **suma_server.c**, localizamos la línea en donde se menciona *"Insert server code here"* y agregamos lo siguiente:
 ```c
@@ -222,7 +212,7 @@ suma_1_arg.a = a;
 suma_1_arg.b = b;
 result_1 = suma_1(&suma_1_arg, clnt);
 ```
-Antes de compilar no olvidemos añadir la librería ** stdio.h** al inicio del archivo.  
+Antes de compilar no olvidemos añadir la librería **stdio.h** al inicio del archivo.  
 ```c
 #include <stdio.h>
 ```
@@ -262,7 +252,7 @@ Es momento de trasladar el cliente a través de la red, debido a que a las máqu
 $ apt-get update
 $ apt-get install openssh-server openssh-client
 ```
-Utilizaremos ssh desde una máquina para conectarnos a otra, usando la shel segura, suponiendo que se desea conectar de una máquina A cliente con IP=192.168.1.2 a una máquina B servidor con IP=192.168.2.4, utilice los siguientes comandos para conectarse y copiar el fichero ejecutable.
+Utilizaremos ssh desde una máquina para conectarnos a otra, usando la shell segura, suponiendo que se desea conectar de una máquina A cliente con IP=192.168.1.2 a una máquina B servidor con IP=192.168.2.4, utilice los siguientes comandos para conectarse y copiar el fichero ejecutable.
 ```sh
 $ ssh yesser@192.168.2.4
 $ password para el usuario: 
