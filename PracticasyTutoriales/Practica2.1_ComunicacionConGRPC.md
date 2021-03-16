@@ -308,3 +308,11 @@ El servidor gRPC ahora escucha en el puerto 9000
 Si recibe alguna advertencia o error de importación, intente ejecutar: 
 
 `$ go mod tidy`
+
+## Trabajo individual 
+En su documentación, gRPC se define como un marco moderno de llamadas a procedimientos remotos, ejecutable en cualquier entorno, en la práctica realizada dispone de un ejemplo simple de implementación, es su tarea proponer un proyecto donde use gRPC y utilice todas sus bondades:
+ * Puede probar el flujo de datos bidireccional
+ * El consumo de datos en tiempo real
+ * Aplicar autenticación de los clientes usando gRPC.  
+
+ Es libre de proponer cualquier proyecto donde aplique esta tecnología hasta el momento estudiada, utilice un formato de propuesta donde explique los beneficios otorgados y la arquitectura que implementará
