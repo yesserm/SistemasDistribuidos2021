@@ -19,7 +19,7 @@ func main() {
 	var conn *grpc.ClientConn
 	conn, err := grpc.Dial(":9000", grpc.WithInsecure())
 	if err != nil {
-		log.Fatalf("Did not connect: %s", err)
+		log.Fatalf("No conecté: %s", err)
 	}
 	defer conn.Close()
 
@@ -29,7 +29,7 @@ func main() {
 	//Service method call, we send a MessageRequest and receive in response a MessageReply
 	response, err := c.SendMessage(context.Background(), &chat.MessageRequest{Name: "gRPC Client"})
 	if err != nil {
-		log.Fatalf("Error when calling SendMessage: %s", err)
+		log.Fatalf("Error al llamar a SendMessage: %s", err)
 	}
-	log.Printf("Response from server: %s", response.Body)
+	log.Printf("Respuesta del servidor: %s", response.Body)
 }

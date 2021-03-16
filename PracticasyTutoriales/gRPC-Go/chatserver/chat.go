@@ -14,6 +14,6 @@ type Server struct {
 
 //SendMessage function implementation
 func (s *Server) SendMessage(ctx context.Context, in *MessageRequest) (*MessageReply, error) {
-	log.Printf("Received message from: %s", in.GetName())
-	return &MessageReply{Body: "Hello " + in.GetName() + " From the Server!"}, nil
+	log.Printf("Mensaje recibido de : %s", in.GetName())
+	return &MessageReply{Body: "Hola " + in.GetName() + " desde el servidor!"}, nil
 }

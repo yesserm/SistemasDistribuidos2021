@@ -19,10 +19,10 @@ func main() {
 	//Listening port definition, in this case port 9000
 	lis, err := net.Listen("tcp", fmt.Sprintf(":%d", 9000))
 	if err != nil {
-		log.Fatalf("Failed to listen: %v", err)
+		log.Fatalf("No escuché: %v", err)
 	}
 
-	println("gRPC Server now listening on port 9000")
+	println("El servidor gRPC ahora escucha en el puerto 9000")
 
 	//New instance or the gRPC server
 	grpcServer := grpc.NewServer()
@@ -33,6 +33,6 @@ func main() {
 
 	//We call Serve() to start the service
 	if err := grpcServer.Serve(lis); err != nil {
-		log.Fatalf("Failed to serve: %s", err)
+		log.Fatalf("No pude servir: %s", err)
 	}
 }
