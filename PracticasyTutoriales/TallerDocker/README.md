@@ -1,6 +1,6 @@
 # Talleres básicos e introductorios a Docker
 ## Descripción
-En este repositorio encontrarás algunos talleres básicos para aprender Docker, eres libre de utilizarlo, solo cuenta de donde lo sacaste :)
+En este repositorio encontrarás algunos talleres básicos para aprender Docker. **Fuente:** _Cloud Native Guatemala_
 ## Contenidos
 Estos son los talleres disponibles en este repositorio
 - [ Taller 1: Introducción a Docker ](taller1-introduccion.md)
@@ -11,11 +11,11 @@ Estos son los talleres disponibles en este repositorio
 ### Clonar el repositorio
 Para clonar el repositorio ejecuta el comando:
 ```
-git clone https://github.com/sergioarmgpl/taller-docker.git
+git clone https://github.com/yessermiranda13/SistemasDistribuidos2021.git
 ```
 
 ### Usar el servidor del demo
-Para conectarte al servidor del demo baja la llave ubicada en la carpeta key y ejecuta:
+Para conectarte al servidor, recuerda que las máquinas virtuales de la nube utilizan claves ssh, es necesario obtenerla :
 ```
 ssh -i taller-docker.pem root@IP_SERVIDOR
 ```
