@@ -47,7 +47,7 @@ kubectl get pods
 #### Exponer puerto para acceso externo
 
 ```bash
-kubectl expose pod/nodejs --port=3000 --target-port=3000 --type=NodePort --name=nginx-svc
+kubectl expose pod/nodejs --port=3000 --target-port=3000 --type=NodePort --name=nodejs-svc
 ```
 
 ### Monitoreo del Pod
