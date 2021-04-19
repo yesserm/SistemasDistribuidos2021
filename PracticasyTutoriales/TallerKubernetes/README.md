@@ -1,5 +1,8 @@
 # Taller Kubernetes 
-
+Este taller puede ser realizado de las siguientes maneras:
+ * [Usando un escenario de Katacoda con todo preparado](https://www.katacoda.com/cloudnativeplusgt/scenarios/k8s_up_running)
+ * [Instalando kubernetes de forma local](https://kubernetes.io/docs/tasks/tools/)
+ * [Usando una instancia de kubernetes de un proveedor de la nube](https://azure.microsoft.com/en-us/services/kubernetes-service/)
 
 ## Practica 1 - Creacion de un pod
 
