@@ -1,4 +1,5 @@
 # Taller Kubernetes 
+![Imagen de Arquitectura de kubernetes](https://d33wubrfki0l68.cloudfront.net/2475489eaf20163ec0f54ddc1d92aa8d4c87c96b/e7c81/images/docs/components-of-kubernetes.svg)
 Este taller puede ser realizado de las siguientes maneras:
  * [Usando un escenario de Katacoda con todo preparado](https://www.katacoda.com/cloudnativeplusgt/scenarios/k8s_up_running)
  * [Instalando kubernetes de forma local](https://kubernetes.io/docs/tasks/tools/)
